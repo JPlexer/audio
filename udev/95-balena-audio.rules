@@ -9,6 +9,7 @@ SUBSYSTEM!="sound", GOTO="alsa_card_naming_end"
 ACTION!="add", GOTO="alsa_card_naming_end"
 
 DRIVERS=="snd_hda_intel", ATTR{id}="hda-intel"
+DRIVERS=="snd-usb-audio", ATTR{id}="usb-Logitech_Logitech_G430_Gaming_Headset-00"
 DRIVERS=="snd-usb-audio", ATTR{id}="usb-soundcard-%n"
 DRIVERS=="bcm2835_audio", ATTR{id}="bcm2835"
 
